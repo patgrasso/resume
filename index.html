@@ -3,68 +3,82 @@
   <head>
     <title>Patick Grasso</title>
     <meta charset="UTF-8" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', 'sans-serif';
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="chars.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
-      <h1>Patrick Grasso</h1>
+      <div>
+        <h1>Patrick Grasso</h1>
+        <h2>Student / Software Developer</h2>
+        <div class="profile-icons">
+          <!--i class="fa fa-facebook-square"></i-->
+          <i class="fa fa-linkedin-square"></i>
+          <a href="https://linkedin.com/in/patrick-grasso-9b36778a"
+             target="_blank"
+             class="contact-info">
+             /in/patrick-grasso-9b36778a
+          </a>
+          <i class="fa fa-github"></i>
+          <a href="https://github.com/patgrasso"
+             target="_blank"
+             class="contact-info">
+             patgrasso
+           </a>
+        </div>
+      </div>
       <ul>
-        <li>pgrasso@stevens.edu</li>
-        <li>732-856-1724</li>
-        <li>1 Castle Point Terr., Hoboken, NJ 07030</li>
+        <li>
+          <span class="contact-info">pgrasso@stevens.edu</span>
+          <i class="material-icons">email</i>
+        </li>
+        <li>
+          <span class="contact-info">732-856-1724</span>
+          <i class="material-icons">phone</i>
+        </li>
+        <li>
+          <span class="contact-info">
+            <p>1 Castle Point Terrace</p>
+            <p>Hoboken, NJ</p>
+          </span>
+          <i class="material-icons">home</i>
+        </li>
+        <!--li>patgrasso<i class="fa fa-github"></i></li-->
       </ul>
     </header>
 
     <main>
       <section id="technical">
         <h2>Technical Strengths</h2>
-        <article class="inline">
+        <article class="inline languages">
           <h3>Programming Languages</h3>
-          <ul>
-            <li>JavaScript/Node.js</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Scheme</li>
-          </ul>
+          <figure id="programming-language-chart"></figure>
         </article>
-        <article class="inline">
-          <h3>Operating Systems</h3>
-          <ul>
-            <li>Linux Mint</li>
-            <li>Arch Linux</li>
-            <li>Ubuntu</li>
-            <li>Windows</li>
-          </ul>
-        </article>
-        <article class="inline">
+        <article class="inline tools">
           <h3>Tools</h3>
           <ul>
+            <li>Node.js</li>
             <li>Git</li>
             <li>ViM</li>
             <li>Bash</li>
             <li>Subversion</li>
             <li>Github</li>
             <li>Eclipse</li>
-          </ul>
-        </article>
-        <article class="inline">
-          <h3>Databases</h3>
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
           </ul>
         </article>
       </section>
@@ -81,10 +95,9 @@
       <section id="experience">
         <h2>Work Experience</h2>
         <article>
-          <h3>iCIMS</h3>
+          <h3>Software Developer Intern</h3>
           <p class="date">June - August 2015</p>
-          <p class="location">Matawan, NJ</p>
-          <p class="title">Software Developer Intern</p>
+          <p class="organization">iCIMS</p>
           <ul>
             <li>Designed and implemented a system to automate merges using multiple version
             control systems</li>
@@ -93,10 +106,9 @@
           </ul>
         </article>
         <article>
-          <h3>iCIMS</h3>
+          <h3>Software Development Engineer in Test (SDET) Intern</h3>
           <p class="date">June - August 2014</p>
-          <p class="location">Matawan, NJ</p>
-          <p class="title">Software Development Engineer in Test (SDET) Intern</p>
+          <p class="organization">iCIMS</p>
           <ul>
             <li>Implemented a test result reporting framework which integrated automation test
             scripts and unit tests with test case management tools</li>
@@ -105,10 +117,9 @@
           </ul>
         </article>
         <article>
-          <h3>Stevens Institute of Technology Computer Science Dept.</h3>
+          <h3>Teaching Assistant</h3>
           <p class="date">February 2015 - Present</p>
-          <p class="location">Hoboken, NJ</p>
-          <p class="title">Teaching Assistant</p>
+          <p class="organization">Stevens Institute of Technology Computer Science Dept.</p>
           <ul>
             <li>Improve students' understanding of the course content through examples and
             lab assignments</li>
@@ -119,10 +130,9 @@
       <section id="leadership">
         <h2>Leadership and Activities</h2>
         <article>
-          <h3>Stevens Institute of Technology Office of Residence Life</h3>
+          <h3>Resident Assistant</h3>
           <p class="date">May 2015 - Present</p>
-          <p class="location">Hoboken, NJ</p>
-          <p class="title">Resident Assistant</p>
+          <p class="organization">Stevens Institute of Technology Office of Residence Life</p>
           <ul>
             <li>Foster a safe and friendly community, within an area of 30 residents, while
             enforcing university policies</li>
@@ -132,19 +142,17 @@
           </ul>
         </article>
         <article>
-          <h3>Stevens Institute of Technology Computer Science Club</h3>
+          <h3>Co-Founder and Vice President</h3>
           <p class="date">May 2015 - Present</p>
-          <p class="location">Hoboken, NJ</p>
-          <p class="title">Co-Founder and Vice President</p>
+          <p class="organization">Stevens Institute of Technology Computer Science Club</p>
         </article>
         <article>
-          <h3>Boy Scouts of America</h3>
+          <h3>Eagle Scout</h3>
           <p class="date">December 2013 - Present</p>
-          <p class="location">Eatontown, NJ</p>
-          <p class="title">Eagle Scout</p>
+          <p class="organization">Boy Scouts of America</p>
         </article>
       </section>
     </main>
-    <footer>
+    <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
