@@ -44,7 +44,7 @@ var languageProficiencies = [
 ];
 
 
-var datatable = applyColor(languageProficiencies, allTeal);
+var datatable = applyColor(languageProficiencies, allRed);
 datatable.unshift(['Programming Language', 'Proficiency', {role: 'style'}]);
 
 var drawProgrammingLanguagesChart = function () {
