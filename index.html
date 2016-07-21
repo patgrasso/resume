@@ -18,7 +18,6 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="chars.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
-    <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
     <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
   </head>
   <body>
@@ -63,32 +62,52 @@
     </header>
 
     <main>
-      <section id="technical">
-        <h2>Technical Strengths</h2>
-        <article class="inline languages">
-          <h3>Programming Languages</h3>
-          <figure id="programming-language-chart"></figure>
-        </article>
-        <article class="inline tools">
-          <h3>Tools</h3>
-          <ul>
-            <li>Node.js</li>
-            <li>Git</li>
-            <li>ViM</li>
-            <li>Bash</li>
-            <li>Subversion</li>
-            <li>Github</li>
-            <li>Eclipse</li>
-          </ul>
-        </article>
-      </section>
-
       <section id="education">
         <h2>Education</h2>
         <article>
           <h3>Stevens Institute of Technology</h3>
           <p class="date">May 2017</p>
           <p>B.S. in Computer Science and Mathematics Minor</p>
+          <p>GPA: 3.34</p>
+        </article>
+      </section>
+
+      <section id="technical" class="short-list">
+        <h2>Technical Strengths</h2>
+        <article>
+          <h3>Tools:</h3>
+          <span>Node.js, Git, ViM, Bash, Subversion, Github, Eclipse</span>
+        </article>
+        <article>
+          <h3>Programming Languages:</h3>
+          <span>JavaScript, Java, CSS3, HTML5, C, Python, Scheme, C++</span>
+        </article>
+      </section>
+
+      <section id="projects" class="short-list">
+        <h2>Side Projects</h2>
+        <article>
+          <h3>Journ</h3>
+          -
+          <span>
+            A REST API server that allows users to create, label, and share
+            their own journal entries and also read others' public journals
+          </span>
+        </article>
+        <article>
+          <h3>Journ-Web</h3>
+          -
+          <span>
+            A web interface for Journ built using React
+          </span>
+        </article>
+        <article>
+          <h3>Boxchat</h3>
+          -
+          <span>
+            A slack-esque web application utilizing WebSockets for real-time
+            communication, built with Node.js and Express
+          </span>
         </article>
       </section>
 
@@ -153,6 +172,6 @@
         </article>
       </section>
     </main>
-    <script src="index.js" type="text/javascript"></script>
+    <!--script src="index.js" type="text/javascript"></script-->
   </body>
 </html>
