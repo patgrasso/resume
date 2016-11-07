@@ -6,7 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
           rel="stylesheet"
           type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto"
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,700"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
           rel="stylesheet"
           type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons"
@@ -24,95 +27,74 @@
     <header>
       <div>
         <h1>Patrick Grasso</h1>
-        <h2>Student / Software Developer</h2>
-        <div class="profile-icons">
-          <!--i class="fa fa-facebook-square"></i-->
+        <!--div class="profile-icons">
           <i class="fa fa-linkedin-square"></i>
           <a href="https://linkedin.com/in/patrick-grasso-9b36778a"
              target="_blank"
              class="contact-info">
              /in/patrick-grasso-9b36778a
           </a>
-          <i class="fa fa-github"></i>
+        </div-->
+      </div>
+      <ul>
+        <li>
+          <a href="mailto:pgrasso@stevens.edu"
+             target="_blank"
+             class="contact-info">
+             pgrasso@stevens.edu
+          </a>
+          <i class="fa fa-envelope"></i>
+        </li>
+        <li>
+          <span class="contact-info">732-856-1724</span>
+          <i class="fa fa-phone"></i>
+        </li>
+        <li>
           <a href="https://github.com/patgrasso"
              target="_blank"
              class="contact-info">
              patgrasso
-           </a>
-        </div>
-      </div>
-      <ul>
-        <li>
-          <span class="contact-info">pgrasso@stevens.edu</span>
-          <i class="material-icons">email</i>
-        </li>
-        <li>
-          <span class="contact-info">732-856-1724</span>
-          <i class="material-icons">phone</i>
+          </a>
+          <i class="fa fa-github"></i>
         </li>
         <li>
           <span class="contact-info">
             <p>1 Castle Point Terrace</p>
             <p>Hoboken, NJ</p>
           </span>
-          <i class="material-icons">home</i>
+          <i class="fa fa-home"></i>
         </li>
         <!--li>patgrasso<i class="fa fa-github"></i></li-->
       </ul>
     </header>
 
+    <section id="about">
+      <h2 class="center">Student / Software Developer</h2>
+      <!--p class="description">
+        Challenge-seeking, innovative student of Computer Science with experience
+        in computer vision, natural language processing, and full-stack web development.
+        Teaching assistant for various Computer Science courses at Stevens. Passionate
+        technology enthusiast.
+      </p-->
+      <p class="description">
+        Challenge-seeking, innovative student of Computer Science with experience
+        in computer vision, natural language processing, and full-stack web development.
+        Teaching assistant for various Computer Science courses at Stevens. Passionate
+        technology enthusiast.
+      </p>
+      <div class="row">
+        <h3>Programming Languages:</h3>
+        <p>JavaScript, Java, CSS3, HTML5, C, Python, Scheme, Haskell, C++</p>
+      </div>
+      <div class="row">
+        <h3>Tools:</h3>
+        <p>Node.js, Git, ViM, Bash, Subversion, Github, Eclipse, GDB, Chrome DevTools</p>
+      </div>
+    </section>
+
     <main>
-      <section id="education">
-        <h2>Education</h2>
-        <article>
-          <h3>Stevens Institute of Technology</h3>
-          <p class="date">May 2017</p>
-          <p>B.S. in Computer Science and Mathematics Minor</p>
-          <p>GPA: 3.34</p>
-        </article>
-      </section>
-
-      <section id="technical" class="short-list">
-        <h2>Technical Strengths</h2>
-        <article>
-          <h3>Tools:</h3>
-          <span>Node.js, Git, ViM, Bash, Subversion, Github, Eclipse</span>
-        </article>
-        <article>
-          <h3>Programming Languages:</h3>
-          <span>JavaScript, Java, CSS3, HTML5, C, Python, Scheme, C++</span>
-        </article>
-      </section>
-
-      <section id="projects" class="short-list">
-        <h2>Side Projects</h2>
-        <article>
-          <h3>Journ</h3>
-          -
-          <span>
-            A REST API server that allows users to create, label, and share
-            their own journal entries and also read others' public journals
-          </span>
-        </article>
-        <article>
-          <h3>Journ-Web</h3>
-          -
-          <span>
-            A web interface for Journ built using React
-          </span>
-        </article>
-        <article>
-          <h3>Boxchat</h3>
-          -
-          <span>
-            A slack-esque web application utilizing WebSockets for real-time
-            communication, built with Node.js and Express
-          </span>
-        </article>
-      </section>
-
       <section id="experience">
-        <h2>Work Experience</h2>
+        <h2 class="center">Work Experience</h2>
         <article>
           <h3>Software Developer Intern</h3>
           <p class="date">June - August 2015</p>
@@ -146,8 +128,45 @@
         </article>
       </section>
 
+      <section id="projects" class="short-list">
+        <h2 class="center">Projects</h2>
+        <article class="row">
+          <p><span class="title">Nyota</span>
+            - Rule-based, pluggable natural language interpreter that can be programmed
+            to utilize various resources
+          </p>
+        </article>
+        <article class="row">
+          <p><span class="title">Boxchat</span>
+            - A slack-esque web application utilizing WebSockets for real-time
+            communication, using a MEAN stack
+          </p>
+        </article>
+        <article class="row">
+          <p><span class="title">Kitti Road/Lane Detection</span>
+            - Research with various segmentation and classification methods in order to
+            construct an accurate road/lane detector
+          </p>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2 class="center">Education</h2>
+        <article>
+          <h3>Stevens Institute of Technology</h3>
+          <p class="date">May 2018</p>
+          <p>M.S. in Cybersecurity</p>
+        </article>
+        <article>
+          <h3>Stevens Institute of Technology</h3>
+          <p class="date">May 2017</p>
+          <p>B.S. in Computer Science and Mathematics Minor</p>
+          <p>GPA: 3.54</p>
+        </article>
+      </section>
+
       <section id="leadership">
-        <h2>Leadership and Activities</h2>
+        <h2 class="center">Leadership and Activities</h2>
         <article>
           <h3>Resident Assistant</h3>
           <p class="date">May 2015 - Present</p>
@@ -156,7 +175,7 @@
             <li>Foster a safe and friendly community, within an area of 30 residents, while
             enforcing university policies</li>
             <li>Plan and facilitate social and didactic programs and events for residents</li>
-            <li>Handle crisis management, alcohol and drug awareness, diversity, time management,
+            <li>Handle crisis management, alcohol &amp; drug awareness, time management,
             confidentiality, and conflict mediation</li>
           </ul>
         </article>
