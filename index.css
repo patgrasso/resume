@@ -87,8 +87,30 @@ header .contact-info p {
 
 header i.fa {
     font-size: 24px;
-    margin-right: 5px;
+    margin-right: 0px;
+    width: 16px;
 }
+
+header i.fa.fa-phone {
+    padding-top: 1px;
+    padding-right: 2px;
+    width: 14px;
+    height: 15px;
+}
+
+header i.fa.fa-github {
+    padding-top: 2px;
+    padding-right: 1px;
+    width: 15px;
+    height: 14px;
+}
+
+header i.fa.fa-home {
+    padding-right: 1px;
+    width: 15px;
+    padding-bottom: 16px;
+}
+
 
 header .contact-info + i.fa {
     font-size: 16px;
