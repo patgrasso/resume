@@ -186,7 +186,7 @@ article .date {
     font-family: 'Open Sans';
 }
 
-article .organization {
+article .organization, article .job-title {
     //color: #f44336;
     font-style: italic;
 }
