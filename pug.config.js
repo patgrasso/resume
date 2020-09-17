@@ -36,9 +36,9 @@ module.exports = {
         roles: [
           {
             title: "Teaching Assistant",
-            startDate: "February 2015",
-            endDate: "December 2017",
-            description: "Algorithms, Concurrent Programming, Operating Systems, Team Prog. & Prob. Solving",
+            startDate: "Feb 2015",
+            endDate: "Dec 2017",
+            description: "Algorithms, Concurrent Prog., Operating Systems, Team Prog. & Problem Solving",
           },
         ],
       },
