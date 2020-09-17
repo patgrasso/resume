@@ -8,10 +8,11 @@
   "license": "skip",
   "private": true,
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "pug": "^3.0.0"
   },
   "scripts": {
     "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug --public-url ./"
   }
 }
