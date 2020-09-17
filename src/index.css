@@ -179,13 +179,15 @@ main section h2 {
     text-decoration: underline;
 }
 
-h3 {
+article h3 {
+    margin-top: 7px;
     font-size: 14px;
 }
 
 article {
     position: relative;
     margin-bottom: 0;
+    margin-top: 7px;
 }
 
 article.row {
@@ -208,10 +210,6 @@ article .organization, article .job-title {
     font-style: italic;
 }
 
-.job, .job-role {
-  margin-top: 6px;
-}
-
 article ul {
     margin-left: 18px;
 }
@@ -219,5 +217,9 @@ article ul {
 article ul > li {
     position: relative;
     list-style: disc;
+}
+
+.job-role {
+  margin-top: 7px;
 }
 
