@@ -1,5 +1,22 @@
 /* testing */
 
+html {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  width: 8.5in;
+  margin: auto;
+  background-color: white;
+  min-height: 11in;
+}
+
+@media print {
+  body {
+    width: auto;
+    min-height: auto;
+  }
+}
 
 * {
     margin: 0;
@@ -189,6 +206,10 @@ article .date {
 article .organization, article .job-title {
     //color: #f44336;
     font-style: italic;
+}
+
+.job, .job-role {
+  margin-top: 6px;
 }
 
 article ul {
