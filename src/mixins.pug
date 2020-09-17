@@ -1,0 +1,8 @@
+mixin stylesheet(href)
+  link(rel="stylesheet", type="text/css", href=href)
+
+mixin dateRange(start, end)
+  if end
+    p.date #{start} - #{end}
+  else
+    p.date #{start} - Current

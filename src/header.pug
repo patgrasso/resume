@@ -1,0 +1,26 @@
+header
+  div
+    h1 Patrick Grasso
+  ul
+    li
+      a.contact-info(
+        href="mailto:" + contact.email
+        target="_blank"
+        class="contact-info"
+      ) #{contact.email}
+      i.fa.fa-envelope
+    li
+      span.contact-info #{contact.phone}
+      i.fa.fa-phone
+    li
+      a.contact-info(
+        href="https://github.com/" + contact.github
+        target="_blank"
+        class="contact-info"
+      ) #{contact.github}
+      i.fa.fa-github
+    li
+      span.contact-info
+        p #{contact.address1}
+        p #{contact.address2}
+      i.fa.fa-home

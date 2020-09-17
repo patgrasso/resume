@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Pat's resume",
+  "main": "src/index.pug",
+  "repository": "git@github.com:patgrasso/resume.git",
+  "author": "Patrick Grasso <patgra123@gmail.com>",
+  "license": "skip",
+  "private": true,
+  "devDependencies": {
+    "pug": "^3.0.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "build": "parcel build src/index.pug"
+  }
+}

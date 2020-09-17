@@ -1,0 +1,56 @@
+include mixins
+
+html(lang="en-US")
+  head
+    title Patrick Grasso
+    meta(charset="UTF-8")
+    link(href="index.css", rel="stylesheet", type="text/css")
+    link(href="chars.css", rel="stylesheet", type="text/css")
+    +stylesheet("index.css")
+    +stylesheet("chars.css")
+    +stylesheet("chars.css")
+    +stylesheet("https://fonts.googleapis.com/css?family=Roboto+Mono")
+    +stylesheet("https://fonts.googleapis.com/css?family=Alegreya+SC:400,700")
+    +stylesheet("https://fonts.googleapis.com/css?family=Open+Sans:400,700")
+    +stylesheet("https://fonts.googleapis.com/css?family=Material+Icons")
+    +stylesheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+
+  body
+    include header
+
+    main
+      section#education
+        each credential in education
+          article
+            h3 #{credential.school}
+            p.date #{credential.graduationDate}
+            p #{credential.degree} | GPA: #{credential.gpa}
+            ul
+              each role in credential.roles
+                li
+                  h3 #{role.title}
+                  +dateRange(role.startDate, role.endDate)
+                  p.organization #{role.description}
+
+      section#experience
+        h2.center Experience
+        each job in experience
+          article.job
+            h3 #{job.company}
+            each role in job.roles
+              div.job-role
+                +dateRange(role.startDate, role.endDate)
+                p.job-title #{role.title}
+                ul
+                  each d in role.description
+                    li #{d}
+
+      section#projects.short-list
+        h2.center Projects
+        each project in projects
+          article.row
+            p
+              span.title #{project.name}
+              | &nbsp;- #{project.description}
+
+    script(src="./index.js")
