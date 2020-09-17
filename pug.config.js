@@ -1,8 +1,25 @@
-const contact = require('./contact-info.json');
+
+function contactInfo() {
+  var privateContactInfo = {};
+  try {
+    privateContactInfo = require('./contact-info.json');
+  } catch (e) {}
+
+  return {
+    ...publicContactInfo,
+    ...privateContactInfo,
+  };
+}
+
+const publicContactInfo = {
+  phone: "732-856-1724",
+  email: "patgra123@gmail.com",
+  github: "patgrasso",
+};
 
 module.exports = {
   locals: {
-    contact,
+    contact: contactInfo(),
     education: [
       {
         school: "Stevens Institute of Technology",
