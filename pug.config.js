@@ -1,3 +1,8 @@
+const yaml = require('yaml');
+const fs = require('fs');
+
+const pugConfigYAML = fs.readFileSync('pug.config.yaml').toString();
+const locals = yaml.parse(pugConfigYAML);
 
 function contactInfo() {
   var privateContactInfo = {};
@@ -20,6 +25,10 @@ const publicContactInfo = {
 module.exports = {
   locals: {
     contact: contactInfo(),
+    ...locals,
+  },
+};
+/*
     education: [
       {
         school: "Stevens Institute of Technology",
@@ -104,8 +113,8 @@ module.exports = {
       },
       {
         name: "SemNet",
-        description: "Worked closely with a client and 3 other students to build an isomorphic web app for analyzing data using multivariate polynomial regression.",
+        description: "Create a program to model semantic networks by parsing natural lanaguage.",
       },
     ],
   },
-};
+  */
