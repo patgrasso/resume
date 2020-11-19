@@ -9,10 +9,14 @@
   "private": true,
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "pug": "^3.0.0"
+    "nodemon": "^2.0.6",
+    "parcel": "^1.11.0",
+    "pug": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "yaml": "^1.10.0"
   },
   "scripts": {
-    "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug --public-url ./"
+    "start": "nodemon --watch pug.config.js --watch pug.config.yaml --exec 'parcel --no-cache --hmr-port 48240' src/index.pug",
+    "build": "rimraf dist && parcel build src/index.pug --public-url ./"
   }
 }
