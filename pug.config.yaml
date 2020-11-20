@@ -20,25 +20,24 @@ experience:
   - title: Software Engineer - TradeLens
     startDate: August 2018
     description:
-    - Collaborated with Maersk to build an event processing system capable of
-      tracking shipments and intermodal shipping containers with information
-      provided by several large ocean transport companies.
-    - Designed and implemented a generic, role-based, hierarchical access
-      control system inspired by AWS IAM, Google Cloud IAM, and Open Policy
-      Agent in order to enforce complex data access rules for TradeLens.
-    # TODO: convey that I worked on almost all parts of the product
-    # and got a good understanding of problem domain as a result
-    #
-    # TODO: add something about researching EDIFACT and shipping domain
-    - Worked with stakeholders to design and develop a notification system
-      built with Twilio and Sendgrid.
-#    - Used Kubernetes and Helm to orchestrate application deployments.
-    - Coordinated the deployment of several services using Kubernetes and
-      related tools such as Helm, Skaffold, Argo.
-    - Helped to build an ETL pipeline in order to enable analytics for clients
-      using Kafka, Apache Avro, Apache Spark SQL, and IBM Cloud Object Storage.
-#    - Participated in IBM's Golang developer community and led team education
-#      sessions on Golang.
+    - Designed and created a generic, role-based, hierarchical access policy
+      evaluation service with Node.js and TypeScript for enforcing complex data
+      access rules within TradeLens.
+    - Worked with offering managers from Maersk and IBM to implement the
+      shipment tracking feature within the TradeLens's event processing
+      services using Java, Kafka, and Cloudant (CouchDB).
+    - Built a service in Java which uses Cloudant to manage notification
+      preferences and transmits notifications to end users via Twilio and
+      SendGrid based on events issued by other services.
+    - Helped to develop an ETL pipeline for TradeLens using Kafka, Apache Avro,
+      Apache Spark SQL, and IBM Cloud Object Storage, which enables clients to
+      perform analytics on and gather insights from large datasets of shipment
+      and container events from various ocean carriers and freight forwarders.
+    - Implemented various UI features in TradeLens's angular application.
+    - Assisted in coordinating the deployment of various services throughout
+      TradeLens to Kubernetes using Helm, Argo, Skaffold, and other tools.
+    - Gained significant knowledge of EDIFACT, UN/CEFACT, and various norms and
+      procedures of the international shipping industry.
 
   - title: "Software Engineering Intern - Extreme Blue"
     startDate: "May"
