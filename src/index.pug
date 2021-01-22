@@ -20,19 +20,6 @@ html(lang="en-US")
     include header
 
     main
-      section#education
-        each credential in education
-          article
-            h3 #{credential.school}
-            p.date #{credential.graduationDate}
-            p #{credential.degree} | GPA: #{credential.gpa}
-            ul
-              each role in credential.roles
-                li
-                  h3 #{role.title}
-                  +dateRange(role.startDate, role.endDate)
-                  p.organization #{role.description}
-
       section#experience
         h2.center Experience
         each job in experience
@@ -45,6 +32,20 @@ html(lang="en-US")
                 ul
                   each d in role.description
                     li #{d}
+
+      section#education
+        h2.center Education
+        each credential in education
+          article
+            h3 #{credential.school}
+            p.date #{credential.graduationDate}
+            p #{credential.degree} • GPA: #{credential.gpa}
+            ul
+              each role in credential.roles
+                li
+                  +dateRange(role.startDate, role.endDate)
+                  p #{role.title} - #{role.description}
+                  // p.organization #{role.description}
 
       section#projects.short-list
         h2.center Projects

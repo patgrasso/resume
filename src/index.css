@@ -9,6 +9,7 @@ body {
   margin: auto;
   background-color: white;
   min-height: 11in;
+  height: 11in;
 }
 
 @media print {
@@ -74,7 +75,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: 2px solid #000;
+    //border-bottom: 2px solid #000;
 }
 
 header h2 {
@@ -125,7 +126,7 @@ header i.fa.fa-github {
 header i.fa.fa-home {
     padding-right: 1px;
     width: 15px;
-    padding-bottom: 16px;
+    //padding-bottom: 16px;
 }
 
 
@@ -203,6 +204,7 @@ article .date {
     vertical-align: middle;
     float: right;
     font-family: 'Open Sans';
+    color: rgba(0, 0, 0, 0.6);
 }
 
 article .organization, article .job-title {
@@ -211,7 +213,8 @@ article .organization, article .job-title {
 }
 
 article ul {
-    margin-left: 18px;
+    margin-left: 20px;
+    margin-top: 4px;
 }
 
 article ul > li {
