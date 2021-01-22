@@ -1,51 +1,64 @@
 education:
 - school: "Stevens Institute of Technology"
   graduationDate: "May 2018"
-  degree: "M.S. in Cybersecurity"
+  degree: "Master of Science in Cybersecurity"
   gpa: 3.67
   roles: []
 - school: "Stevens Institute of Technology"
   graduationDate: "May 2017"
-  degree: "B.S. in Computer Science and Mathematics Minor"
+  degree: "Bachelor of Science in Computer Science with Mathematics Minor"
   gpa: 3.40
   roles:
   - title: "Teaching Assistant"
     startDate: "Feb 2015"
     endDate: "Dec 2017"
-    description: "Algorithms, Concurrent Prog., Operating Systems, Team Prog. & Problem Solving"
+    description: "Algorithms, Concurrent Programming, Operating Systems, Team Programming & Problem Solving"
 
 experience:
 - company: "IBM"
   roles:
-  - title: Software Engineer - TradeLens
+  - title: Software Engineer • TradeLens
     startDate: August 2018
     description:
-    - Collaborated with Maersk to build an event processing system capable of
-      tracking shipments and intermodal shipping containers with information
-      provided by several large ocean transport companies.
-    - Designed and implemented a generic, role-based, hierarchical access
-      control system inspired by AWS IAM, Google Cloud IAM, and Open Policy
-      Agent in order to enforce complex data access rules for TradeLens.
+    - Collaborated with Maersk to build an event-driven platform that
+      facilitates global trade by using live data ingested from several of the
+      world's largest shipping companies to track shipments and containers,
+      manage trade documents, and enable visibility to ports, terminals, and
+      other global trade parties around the world.
+    - Designed a generic, role-based, hierarchical access control system
+      inspired by AWS IAM, Google Cloud IAM, and Open Policy Agent in order to
+      enforce complex data access rules and implemented it with
+      TypeScript/Node.js.
     # TODO: convey that I worked on almost all parts of the product
     # and got a good understanding of problem domain as a result
     #
     # TODO: add something about researching EDIFACT and shipping domain
-    - Worked with stakeholders to design and develop a notification system
-      built with Twilio and Sendgrid.
+    - Worked with stakeholders to design and develop a notification
+      microservice utilizing Twilio and Sendgrid.
 #    - Used Kubernetes and Helm to orchestrate application deployments.
-    - Coordinated the deployment of several services using Kubernetes and
-      related tools such as Helm, Skaffold, Argo.
-    - Helped to build an ETL pipeline in order to enable analytics for clients
-      using Kafka, Apache Avro, Apache Spark SQL, and IBM Cloud Object Storage.
+    - Set up continuous deployment for several services using Docker,
+      Kubernetes, Helm, Skaffold, Argo, and Travis.
+    - Used Apache Kafka, Avro, Spark SQL, IBM Cloud Object Storage, and Python
+      to build an ETL pipeline, giving clients the ability to perform custom
+      analytics which help them optimize their business processes.
+    - Coordinated with a Chinese telecom company to integrate a third-party
+      identity provider in order to enable partnership with a large Chinese
+      shipping company.
+    #- Worked with a truly global team consisting of individuals in California,
+    #  North Carolina, Jersey City, Denmark, Egypt, Bangalore, and Beijing among
+    #  other locations.
 #    - Participated in IBM's Golang developer community and led team education
 #      sessions on Golang.
 
-  - title: "Software Engineering Intern - Extreme Blue"
+  - title: Software Engineering Intern • Extreme Blue
     startDate: "May"
     endDate: "August 2017"
     description:
-    - Architected and implemented an identity management solution that uses a combination of biometrics and other factors to securely authenticate individuals.
-    - Created and delivered a pitch to over 50 executives at IBM's corporate headquarters in Armonk, NY.
+    - Architected and implemented an identity management solution that uses a
+      combination of biometrics and other factors to securely authenticate
+      individuals.
+    - Created and delivered a pitch to over 50 executives at IBM's corporate
+      headquarters in Armonk, NY.
 
 - company: "iCIMS"
   roles:
@@ -53,25 +66,36 @@ experience:
     startDate: "June"
     endDate: "August 2015"
     description:
-    - Designed and implemented a system to automate merges, saving each developer an average of 4 hours/week.
-    - Created a user-friendly web interface for the system using EmberJS and Material Design Lite.
+    - Designed and implemented a system to automate merges, saving each
+      developer an average of 4 hours/week.
+    - Created a user-friendly web interface for the system using EmberJS and
+      Material Design Lite.
 
   - title: "Software Development Engineer in Test (SDET) Intern"
     startDate: "June"
     endDate: "August 2014"
     description:
-    - Implemented a system which aligns automation tests, unit tests, and QA tests within a test case management suite, saving QA technicians hours of manually entering test case information.
+    - Implemented a system which aligns automation tests, unit tests, and QA
+      tests within a test case management suite, saving QA technicians hours of
+      manually entering test case information.
 
 projects:
 - name: TaylorFit
   description: |
     Worked closely with a client and 3 other students to build an isomorphic
     web app for analyzing data using multivariate polynomial regression. All
-    processing is done client-side using WebWorkers to distribute complex
+    processing is done client-side using WebWorkers to parallelize complex
     calculations.
+
+- name: HTTP Pretty Good Authentication (HPGA)
+  description: |
+    Proof-of-concept for HTTP Authentication based on PGP signatures as an
+    extension to RFC 7235. Created a Passport.js strategy for the server side
+    of authentication and a Python client to perform the client side of
+    authentication.
 
 - name: SemNet
   description: |
-    Created a python program which models entity relationships by parsing
-    natural lanaguage and trained it on a subset of Wikipedia's "simple
-    english" pages.
+    Used Stanford's CoreNLP library to models entity relationships by applying
+    syntax rules to natural lanaguage parsed into syntax trees, and trained it
+    on a subset of Wikipedia's "simple english" pages.
